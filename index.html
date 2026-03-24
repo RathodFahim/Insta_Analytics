@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reel Insight Pro — Instagram Reel Analytics</title>
+  <meta name="description" content="The most powerful way to understand your Instagram video performance. Depth-first insights for creators who care about impact, not just views." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>📊</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="/" class="logo" id="logo">
+          <span class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a855f7"/>
+                  <stop offset="100%" stop-color="#ec4899"/>
+                </linearGradient>
+              </defs>
+              <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="logo-text">Reel Insight Pro</span>
+        </a>
+        <div class="nav-links">
+          <a href="#" class="nav-link active" id="nav-overview">Overview</a>
+          <a href="#" class="nav-link" id="nav-audience">Audience</a>
+          <a href="#" class="nav-link" id="nav-competitors">Competitors</a>
+          <a href="#" class="nav-link" id="nav-reports">Reports</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="api-badge" id="api-badge">
+          <span class="api-dot"></span>
+          <span>API Connected</span>
+        </div>
+        <button class="icon-btn" id="btn-notifications" aria-label="Notifications">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-settings" aria-label="Settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </button>
+        <div class="avatar" id="avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero-section">
+    <div class="hero-inner">
+      <div class="version-badge" id="version-badge">
+        <span class="version-dot"></span>
+        Live Performance Engine v2.4
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Instagram Reel<br/>Analytics, <span class="gradient-text">Reimagined</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        The most powerful way to understand your video performance.<br/>
+        Depth-first insights for creators who care about impact, not just views.
+      </p>
+      <div class="search-bar" id="search-bar">
+        <div class="search-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <input type="url" class="search-input" id="url-input" placeholder="Paste Instagram Reel URL..." autocomplete="off" />
+        <button class="analyze-btn" id="analyze-btn">
+          Analyze
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div class="hero-features" id="hero-features">
+        <span class="feature-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Real-Time Data</span>
+        <span class="feature-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> AI Sentiment</span>
+        <span class="feature-tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Audience Retention</span>
+      </div>
+      <!-- Error message -->
+      <div class="error-msg" id="error-msg" style="display:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <span id="error-text"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ LOADING STATE ═══════════ -->
+  <section class="loading-section" id="loading-section" style="display:none;">
+    <div class="loading-inner">
+      <div class="loading-spinner" id="loading-spinner">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="rgba(168,85,247,0.2)" stroke-width="3"/>
+          <path d="M12 2a10 10 0 019.95 9" stroke="url(#spinGrad)" stroke-width="3" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+          </path>
+          <defs><linearGradient id="spinGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#ec4899"/></linearGradient></defs>
+        </svg>
+      </div>
+      <h2 class="loading-title">Analyzing Reel Data…</h2>
+      <p class="loading-sub">Fetching engagement metrics and audience sentiment</p>
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </div>
+    <!-- Skeleton cards -->
+    <div class="skeleton-grid" id="skeleton-grid">
+      <div class="skeleton-card skeleton-profile">
+        <div class="skel skel-circle"></div>
+        <div class="skel skel-line w60"></div>
+        <div class="skel skel-line w40"></div>
+      </div>
+      <div class="skeleton-card skeleton-main">
+        <div class="skel skel-line w40"></div>
+        <div class="skel skel-line-lg"></div>
+        <div class="skel skel-line w80"></div>
+      </div>
+      <div class="skeleton-card"><div class="skel skel-line w50"></div><div class="skel skel-line-lg"></div></div>
+      <div class="skeleton-card"><div class="skel skel-line w50"></div><div class="skel skel-line-lg"></div></div>
+      <div class="skeleton-card"><div class="skel skel-line w50"></div><div class="skel skel-line-lg"></div></div>
+      <div class="skeleton-card"><div class="skel skel-line w50"></div><div class="skel skel-line-lg"></div></div>
+      <div class="skeleton-card skeleton-wide">
+        <div class="skel skel-line w30"></div>
+        <div class="skel skel-line w90"></div>
+        <div class="skel skel-line w70"></div>
+      </div>
+      <div class="skeleton-card skeleton-wide">
+        <div class="skel skel-line w30"></div>
+        <div class="skel skel-line w60"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EMPTY STATE ═══════════ -->
+  <section class="empty-state" id="empty-state">
+    <div class="empty-inner">
+      <div class="empty-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+          <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="url(#emptyGrad)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M3.5 14.5l2-2M7 18l1.5-1.5" stroke="url(#emptyGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <defs><linearGradient id="emptyGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#ec4899"/></linearGradient></defs>
+        </svg>
+      </div>
+      <h3 class="empty-title">Ready to explore?</h3>
+      <p class="empty-sub">Enter a link above to populate your dashboard.</p>
+      <div class="empty-cards">
+        <div class="empty-card"></div>
+        <div class="empty-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ANALYTICS DASHBOARD ═══════════ -->
+  <section class="dashboard" id="dashboard" style="display:none;">
+    <div class="dashboard-inner">
+
+      <!-- Row 1: Profile + Total Plays -->
+      <div class="dash-row dash-row-top">
+        <div class="card card-profile" id="card-profile">
+          <div class="profile-avatar-wrap">
+            <img class="profile-avatar" id="profile-avatar" src="" alt="Creator avatar" />
+          </div>
+          <h3 class="profile-username" id="profile-username">@username</h3>
+          <p class="profile-bio" id="profile-bio">Creator</p>
+          <a class="profile-link-btn" id="profile-link" href="#" target="_blank" rel="noopener">
+            View Profile
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="card card-total-plays" id="card-plays">
+          <div class="card-plays-header">
+            <span class="card-label">Total Plays</span>
+            <span class="trending-badge" id="trending-badge">
+              <span class="trending-dot"></span> Trending
+            </span>
+          </div>
+          <div class="card-plays-value" id="total-plays">0</div>
+          <div class="engagement-section">
+            <div class="engagement-label-row">
+              <span class="card-label">Engagement Rate</span>
+              <span class="engagement-value gradient-text" id="engagement-rate">0%</span>
+            </div>
+            <div class="engagement-bar-bg">
+              <div class="engagement-bar-fill" id="engagement-bar" style="width:0%"></div>
+            </div>
+            <p class="engagement-delta" id="engagement-delta"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Stats Grid -->
+      <div class="dash-row dash-row-stats">
+        <div class="card card-stat" id="card-likes">
+          <div class="stat-header">
+            <span class="stat-icon stat-icon-likes">❤️</span>
+            <span class="stat-change positive" id="likes-change">+0%</span>
+          </div>
+          <div class="stat-value" id="stat-likes">0</div>
+          <div class="stat-label">Total Likes</div>
+        </div>
+        <div class="card card-stat" id="card-comments">
+          <div class="stat-header">
+            <span class="stat-icon stat-icon-comments">💬</span>
+            <span class="stat-change positive" id="comments-change">+0%</span>
+          </div>
+          <div class="stat-value" id="stat-comments">0</div>
+          <div class="stat-label">Comments</div>
+        </div>
+        <div class="card card-stat" id="card-shares">
+          <div class="stat-header">
+            <span class="stat-icon stat-icon-shares">🔁</span>
+            <span class="stat-change neutral" id="shares-change">Stable</span>
+          </div>
+          <div class="stat-value" id="stat-shares">0</div>
+          <div class="stat-label">Shares</div>
+        </div>
+        <div class="card card-stat" id="card-reach">
+          <div class="stat-header">
+            <span class="stat-icon stat-icon-reach">👁️</span>
+            <span class="stat-change positive" id="reach-change">+0%</span>
+          </div>
+          <div class="stat-value" id="stat-reach">0</div>
+          <div class="stat-label">Total Reach</div>
+        </div>
+      </div>
+
+      <!-- Row 3: Caption + Details -->
+      <div class="dash-row dash-row-details">
+        <div class="card card-caption" id="card-caption">
+          <div class="card-section-head">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span>Original Caption</span>
+          </div>
+          <p class="caption-text" id="caption-text"></p>
+          <div class="caption-hashtags" id="caption-hashtags"></div>
+        </div>
+
+        <div class="card-details-col">
+          <div class="card card-meta" id="card-meta">
+            <div class="meta-row">
+              <div class="meta-item">
+                <span class="meta-label">Post Date</span>
+                <div class="meta-value">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span id="post-date">—</span>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Sentiment</span>
+                <div class="meta-value">
+                  <span id="sentiment-icon">😊</span>
+                  <span id="sentiment-text" class="sentiment-positive">Positive 85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-music" id="card-music">
+            <span class="meta-label">Trending Music</span>
+            <div class="music-row">
+              <div class="music-icon">🎵</div>
+              <div class="music-info">
+                <span class="music-title" id="music-title">—</span>
+                <span class="music-uses" id="music-uses">—</span>
+              </div>
+              <div class="music-bars">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="card card-tags" id="card-tags">
+            <span class="meta-label">Associated Tags</span>
+            <div class="tags-list" id="tags-list"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Reel Insight Pro</span>
+        <span class="footer-sep">—</span>
+        <span class="footer-tagline">Premium Creator Tooling</span>
+      </div>
+      <div class="footer-center">
+        <a href="#" class="footer-link">Documentation</a>
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">API Status</a>
+      </div>
+      <div class="footer-right">
+        <button class="icon-btn" aria-label="Globe">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
