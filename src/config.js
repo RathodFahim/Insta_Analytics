@@ -6,7 +6,7 @@ const config = {
   // BACKEND_URL: 'http://localhost:8000',
 
   // For production (Hugging Face Spaces):
-  BACKEND_URL: 'https://your-hf-space.hf.space',
+  BACKEND_URL: 'https://rathodfahim23-insta-analytics.hf.space',
 
   // Endpoints
   ANALYZE_ENDPOINT: '/api/analyze',
