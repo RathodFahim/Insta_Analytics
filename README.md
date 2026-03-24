@@ -2,10 +2,16 @@
 
 **Instagram Reel Analytics, Reimagined** — A powerful web application for analyzing Instagram Reel and Post performance with depth-first insights for creators who care about impact, not just views.
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-insta--analytics--rose.vercel.app-black?style=for-the-badge)](https://insta-analytics-rose.vercel.app/)
+
 ![Reel Insight Pro](https://img.shields.io/badge/Version-2.4-purple?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 ![Frontend](https://img.shields.io/badge/Frontend-Vite-646CFF?style=flat-square)
 ![Backend](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square)
+
+## 🌐 Live Demo
+
+**Try it now:** [https://insta-analytics-rose.vercel.app/](https://insta-analytics-rose.vercel.app/)
 
 ## ✨ Features
 
